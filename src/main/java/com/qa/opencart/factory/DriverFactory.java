@@ -50,7 +50,7 @@ public class DriverFactory {
 
 	}
 
-	public WebDriver getDriver()
+	public static synchronized WebDriver getDriver()
 	{
 		return tlDriver.get();
 	}
